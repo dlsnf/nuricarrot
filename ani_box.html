@@ -1,0 +1,464 @@
+<style>
+*{
+	padding:0px;
+	margin:0px;
+}
+.ani_box{
+	background:#1d1d1d;
+	width:100%;
+	height:100%;
+}
+
+
+.animation-container{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+
+	width: 450px;
+	height: 450px;
+	z-index:1;
+}
+
+.outline-wrapper{
+	width:100%;
+	height:100%;
+	animation-name: outline-wrapper;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1);
+	
+	-webkit-animation-name: outline-wrapper;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1);
+	
+}
+
+@-webkit-keyframes outline-wrapper{
+	from{
+		-webkit-transform:scale(0) rotate(135deg);
+		transform:scale(0) rotate(135deg);
+
+	}
+	66%{
+		-webkit-transform:scale(1) rotate(0deg);
+		transform:scale(1) rotate(0deg);
+	}
+	to{
+		-webkit-transform:scale(0.9) rotate(0deg);
+		transform:scale(0.9) rotate(0deg);
+	}
+}
+
+@keyframes outline-wrapper{
+	from{
+		-webkit-transform:scale(0) rotate(135deg);
+		transform:scale(0) rotate(135deg);
+
+	}
+	66%{
+		-webkit-transform:scale(1) rotate(0deg);
+		transform:scale(1) rotate(0deg);
+	}
+	to{
+		-webkit-transform:scale(0.9) rotate(0deg);
+		transform:scale(0.9) rotate(0deg);
+	}
+}
+
+
+.outline{
+	position:absolute;
+	background:#5ac6a6;
+	box-shadow:0px 0px 1px 0px #5ac6a6;
+	animation-timing-function: cubic-bezier(0.5, 0, 0.6, 0.6);
+	-webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.6, 0.6);
+}
+
+.outline-x{
+	width:88%;
+	height:3px;
+	animation-name:outline-x;
+	animation-duration:1s;
+	animation-timing-function: cubic-bezier(0.5, 0, 0.6, 0.6);
+
+	-webkit-animation-name:outline-x;
+	-webkit-animation-duration:1s;
+	-webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.6, 0.6);
+
+}
+
+.outline-y{
+	width:3px;
+	height:88%;
+	animation-name:outline-y;
+	animation-duration:1s;
+
+	-webkit-animation-name:outline-y;
+	-webkit-animation-duration:1s;
+}
+
+@-webkit-keyframes outline-x{
+	from{
+		-webkit-transform:scaleX(0);
+		transform:scaleX(0);
+	}
+
+	to{
+		-webkit-transform:scaleX(1);
+		transform:scaleX(1);
+	}
+}
+
+@keyframes outline-x{
+	from{
+		-webkit-transform:scaleX(0);
+		transform:scaleX(0);
+	}
+
+	to{
+		-webkit-transform:scaleX(1);
+		transform:scaleX(1);
+	}
+}
+
+@-webkit-keyframes outline-y{
+	from{
+		-webkit-transform:scaleY(0);
+		transform:scaleY(0);
+	}
+
+	to{
+		-webkit-transform:scaleY(1);
+		transform:scaleY(1);
+	}
+}
+@keyframes outline-y{
+	from{
+		-webkit-transform:scaleY(0);
+		transform:scaleY(0);
+	}
+
+	to{
+		-webkit-transform:scaleY(1);
+		transform:scaleY(1);
+	}
+}
+
+.outline-top{
+	top:0%;
+	left:6%;
+	transform-origin: right center;
+	-webkit-transform-origin: right center;
+}
+
+.outline-bottom{
+	top: calc(100% - 3px);
+	left:6%;
+	transform-origin: left center;	
+	-webkit-transform-origin: left center;	
+}
+
+.outline-left{
+	top:6%;
+	left:0%;
+	transform-origin: bottom center;
+	-webkit-transform-origin: bottom center;
+}
+
+.outline-right{
+	top:6%;
+	left:calc(100% - 3px);
+	transform-origin: top center;
+	-webkit-transform-origin: top center;
+}
+
+
+.outline:after{
+	position:absolute;
+	content:'';
+	background:#fff;
+	box-shadow:0px 0px 1px 0px #fff;
+
+	animation-duration:1s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+
+	-webkit-animation-duration:1s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-fill-mode: backwards;
+}
+
+.outline-x:after{ width:100%; height:1px; }
+.outline-y:after{ width: 1px; height: 100%; }
+
+
+.outline-top:after{
+	top:7px;
+	transform-origin: left center;
+	animation-name:inline-top;
+
+	-webkit-transform-origin: left center;
+	-webkit-animation-name:inline-top;
+}
+
+.outline-bottom:after{
+	bottom:7px;
+	transform-origin: right center;	
+	animation-name:inline-bottom;
+
+	-webkit-transform-origin: right center;	
+	-webkit-animation-name:inline-bottom;
+}
+
+.outline-left:after{
+	left:7px;
+	transform-origin: top center;
+	animation-name:inline-left;
+
+	-webkit-transform-origin: top center;
+	-webkit-animation-name:inline-left;
+}
+
+.outline-right:after{
+	right:7px;
+	transform-origin: bottom center;
+	animation-name:inline-right;
+
+	-webkit-transform-origin: bottom center;
+	-webkit-animation-name:inline-right;
+}
+
+@-webkit-keyframes inline-top{
+	from{
+		-webkit-transform: translateX(-3.5%) scaleX(0);
+		transform: translateX(-3.5%) scaleX(0);
+	}
+
+	to{
+		-webkit-transform: translateX(0%) scaleX(1);
+		transform: translateX(0%) scaleX(1);
+	}
+}
+@keyframes inline-top{
+	from{
+		-webkit-transform: translateX(-3.5%) scaleX(0);
+		transform: translateX(-3.5%) scaleX(0);
+	}
+
+	to{
+		-webkit-transform: translateX(0%) scaleX(1);
+		transform: translateX(0%) scaleX(1);
+	}
+}
+
+@-webkit-keyframes inline-bottom{
+	from{
+		-webkit-transform: translateX(3.5%) scaleX(0);
+		transform: translateX(3.5%) scaleX(0);
+	}
+
+	to{
+		-webkit-transform: translateX(0%) scaleX(1);
+		transform: translateX(0%) scaleX(1);
+	}
+}
+
+@keyframes inline-bottom{
+	from{
+		-webkit-transform: translateX(3.5%) scaleX(0);
+		transform: translateX(3.5%) scaleX(0);
+	}
+
+	to{
+		-webkit-transform: translateX(0%) scaleX(1);
+		transform: translateX(0%) scaleX(1);
+	}
+}
+
+@keyframes inline-left{
+	from{
+		transform: translateY(-3.5%) scaleY(0);
+		transform: translateY(-3.5%) scaleY(0);
+	}
+
+	to{
+		transform: translateY(0%) scaleY(1);
+		transform: translateY(0%) scaleY(1);
+	}
+}
+
+@keyframes inline-left{
+	from{
+		transform: translateY(-3.5%) scaleY(0);
+		transform: translateY(-3.5%) scaleY(0);
+	}
+
+	to{
+		transform: translateY(0%) scaleY(1);
+		transform: translateY(0%) scaleY(1);
+	}
+}
+
+@-webkit-keyframes inline-right{
+	from{
+		-webkit-transform: translateY(3.5%) scaleY(0);
+		transform: translateY(3.5%) scaleY(0);
+	}
+
+	to{
+		-webkit-transform: translateY(0%) scaleY(1);
+		transform: translateY(0%) scaleY(1);
+	}
+}
+
+@keyframes inline-right{
+	from{
+		-webkit-transform: translateY(3.5%) scaleY(0);
+		transform: translateY(3.5%) scaleY(0);
+	}
+
+	to{
+		-webkit-transform: translateY(0%) scaleY(1);
+		transform: translateY(0%) scaleY(1);
+	}
+}
+
+
+.animation-container-2{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+
+	width: 450px;
+	height: 450px;
+
+}
+
+.main_text{
+	width:100%;
+	height:100%;
+	opacity:0;
+	animation-name: text-wrapper;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1);
+	
+	-webkit-animation-name: text-wrapper;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1);
+
+
+	
+}
+
+@-webkit-keyframes text-wrapper{
+	from{
+		-webkit-transform:scale(0) rotate(135deg);
+		transform:scale(0) rotate(135deg);
+		opacity:0;
+
+	}
+	66%{
+		-webkit-transform:scale(0.8) rotate(0deg);
+		transform:scale(0.8) rotate(0deg);
+		opacity:0;
+	}
+	to{
+		-webkit-transform:scale(0.9) rotate(0deg);
+		transform:scale(0.9) rotate(0deg);
+		opacity:1;
+	}
+}
+
+@keyframes text-wrapper{
+	from{
+		-webkit-transform:scale(0) rotate(135deg);
+		transform:scale(0) rotate(135deg);
+		opacity:0;
+
+	}
+	66%{
+		-webkit-transform:scale(0.8) rotate(0deg);
+		transform:scale(0.8) rotate(0deg);
+		opacity:0;
+	}
+	to{
+		-webkit-transform:scale(0.9) rotate(0deg);
+		transform:scale(0.9) rotate(0deg);
+		opacity:1;
+	}
+}
+
+.main_text h1{
+	position:absolute;
+	text-align:center;
+	vertical-align:middle;
+	width:100%;
+}
+
+.main_text .top_center{
+	top:10px;
+
+	font-size:30px;
+	color:#ddd;
+}
+
+.main_text .center_center{
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+
+	font-size:80px;
+	color:#5ac6a6;
+}
+
+.main_text .bottom_center{
+	bottom:10px;
+
+	font-size:30px;
+	color:#ddd;
+}
+
+</style>
+
+<div class="ani_box">
+
+
+	<div class="animation-container">
+
+		
+		<!-- 아웃라인 그룹 -->
+		<div class="outline-wrapper">
+			<div class="outline outline-x outline-top"></div>
+			<div class="outline outline-x outline-bottom"></div>
+			<div class="outline outline-y outline-left"></div>
+			<div class="outline outline-y outline-right"></div>
+
+			
+
+		</div>
+
+
+	</div>
+
+	<div class="animation-container-2">
+		<div class="main_text">
+			<h1 class="top_center">DOO HEE</h1>
+			<h1 class="center_center">MYAONG</h1>
+			<h1 class="bottom_center">NYANG CAT</h1>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+</div><!-- ani_box -->

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<svg class="hello_svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 700 460">
+	<g class="an">
+		<circle class="circle ll" cx="70" cy="70" r="40"></circle>
+		<line class="line ll" x1="154" y1="6" x2="154" y2="156"></line>
+		<line class="line ll" x1="164" y1="66" x2="204" y2="66" style="animation-duration: 1s;"></line>
+
+		<line class="line ll" x1="50.4" y1="146" x2="50.4" y2="210" style="animation-duration: 1s;"></line>
+		<line class="line ll" x1="37" y1="200" x2="172" y2="200"></line>
+	</g>
+
+	<g class="nyung">
+		<line class="line ll" x1="240" y1="14" x2="240" y2="119.5" style="animation-duration: 1s;"></line>
+		<line class="line ll" x1="227" y1="106" x2="330" y2="106"></line>
+
+		
+		<line class="line ll ss" x1="306" y1="34" x2="350" y2="34" style="animation-duration: 1s;"></line>
+		<line class="line ll ss" x1="306" y1="68" x2="350" y2="68" style="animation-duration: 2s;"></line>
+
+		<line class="line ll" x1="360" y1="6" x2="360" y2="134"></line>
+		<ellipse class="circle ll" cx="308" cy="178" rx="52" ry="30" style=""></ellipse>
+
+	</g>
+
+	<g class="ha">
+		<line class="line ll ss" x1="30" y1="270" x2="106" y2="270"></line>
+		<line class="line ll ss" x1="10" y1="302" x2="126" y2="302"></line>
+
+		<line class="line ll" x1="154" y1="250" x2="154" y2="454"></line>
+		<line class="line ll" x1="164" y1="338" x2="204" y2="338" style="animation-duration: 1s;"></line>
+		<circle class="circle ll" cx="70" cy="370" r="36"></circle>
+	</g>
+
+	<g class="sae">
+		<line class="line ll" x1="270" y1="266" x2="226" y2="410"></line>
+		<line class="line ll" x1="250" y1="330" x2="282" y2="408"></line>
+
+		<line class="line ll" x1="280" y1="328" x2="316" y2="328" style="animation-duration: 1s;"></line>
+		<line class="line ll" x1="322" y1="254" x2="322" y2="448" style="animation-duration: 1.4s;"></line>
+		<line class="line ll" x1="362" y1="250" x2="362" y2="454" style="animation-duration: 1.8s;"></line>
+	</g>
+
+	<g class="yo">
+		<ellipse class="circle ll" cx="494" cy="320" rx="56" ry="40" style=""></ellipse>
+		<line class="line ll" x1="454" y1="380" x2="454" y2="420" style="animation-duration: 1.8s;"></line>
+		<line class="line ll" x1="530" y1="380" x2="530" y2="420" style="animation-duration: 1.6s;"></line>
+		<line class="line ll" x1="404" y1="430" x2="580" y2="430"></line>
+	</g>
+
+	<g class="jum">
+		<circle class="dot" cx="650" cy="420" r="36"></circle>
+	</g>
+
+</svg>
