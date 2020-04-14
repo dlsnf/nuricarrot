@@ -5,7 +5,7 @@
 // db 연결부분
 $mysql_host = "localhost";
 $mysql_user = "root";
-$mysql_password = "petpermint1!";
+$mysql_password = "";
 $mysql_db = "spi";
 
 $isSuccess = TRUE;
